@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">
+      <span class="highlight">&lt;</span>
+      MyPortfolio
+      <span class="highlight">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Hi, I'm Golibe Orji</h1>
+        <p>Software Developer | PLP Academy Student</p>
+        <a href="#contact" class="btn-primary">Contact Me</a>
+      </div>
+      <div class="hero-image">
+        <div class="profile-image">
+          <img src="photo_6014979626943760568_x.jpg" alt="Golibe Orji" class="profile-pic">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          Hi! I'm an Industrial Chemist and also a passionate wb dvlop with an interest in building web applications.
+          I'm currently learning programming through the PLP Academy.
+        </p>
+        <p>
+          My journey in tech started when I first discovered my love for problem solving
+          and creating things that people can use.
+        </p>
+        <p>
+          I enjoy working with HTML, CSS and JavaScript, but I know a little bit of python and C programming and I'm always eager to learn new technologies.
+          I believe in continuous learning and growth, and I'm excited about the future of technology.
+        </p>
+        <div class="download-cv">
+          <a href="CV.wps" class="btn-primary" onclick="alert('You are currently downloading my CV')">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-container">
+
+        <div class="skill-card">
+          <div class="skill-icon">HTML</div>
+          <h3>HTML</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">CSS</div>
+          <h3>CSS</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">JS</div>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">PY</div>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">C</div>
+          <h3>C Programming</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-image blue">
+            <span>Project 1</span>
+          </div>
+          <div class="project-info">
+            <h3>PLP Python</h3>
+            <p>
+                A simple Python project that demonstrates basic programming concepts.
+                It includes all assignments done in the python module of the PLP academy.
+            </p>
+            <a href="https://github.com/golibemartha/Powerlearnproject_python.git" class="project-link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image green">
+            <span>Project 2</span>
+          </div>
+          <div class="project-info">
+            <h3>Project Name</h3>
+            <p>
+                This is  focusing on low-level programming using the C language. 
+                The primary purpose of this project is to host various projects, exercises, and assignments related to learning and practicing C programming. 
+                This includes fundamental programming concepts, data structures, algorithms, and other low-level programming tasks.
+            </p>
+            <a href="https://github.com/golibemartha/alx-low_level_programming.git" class="project-link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image red">
+              <span>Project 3</span>
+            </div>
+            <div class="project-info">
+              <h3>Older Portfolio</h3>
+              <p>
+                This project is an old porfolio created dyring the early stages of my learning journey.
+                It showcases my initial skills in HTML and CSS, and serves as a reminder of how far I've come.
+              </p>
+              <a href="https://replit.com/@golibemartha/Zuri-project-1-css#about.html" class="project-link" target="_blank">View Project →</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-container">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <p>&copy; <span id="current-year"></span> Golibe Orji. All rights reserved.</p>
+        </div>
+        <div></div>
+          <p>PLP Academy | February 2025 Cohort</p>
+        </div>
+        <div>
+          <p>Built with HTML, CSS and JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="database.js"></script>
+  <script>
+    // Simple vanilla JavaScript for navigation toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Mobile navigation toggle
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-links');
+      
+      burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+      });
+      
+      // Form submission
+      const form = document.getElementById('contact-form');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        // Save to our simple database
+        saveContactMessage(name, email, message);
+        
+        alert('Thank you for your message! I will get back to you soon.');
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
